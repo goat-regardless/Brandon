@@ -1,0 +1,66 @@
+
+:root{
+  --bg:#0f1111;
+  --surface:#151716;
+  --ink:#eae6e1;
+  --muted:#c7c1b8;
+  --accent:#c2a476;
+  --chip:#222421;
+  --ring: rgba(194,164,118,.35);
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0; color:var(--ink); background:
+    radial-gradient(1200px 600px at 20% -10%, #1a1c1b 0%, var(--bg) 60%) no-repeat,
+    linear-gradient(180deg, #121312 0%, var(--bg) 100%);
+  font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+  line-height:1.6;
+}
+a{color:inherit; text-decoration:none}
+img{max-width:100%; display:block; border-radius:14px; border:1px solid #2f302f; background:#1a1b1a}
+.container{width:min(1120px,92vw); margin-inline:auto; padding-inline:16px}
+header{
+  position:sticky; top:0; z-index:40; backdrop-filter:saturate(140%) blur(8px);
+  background:linear-gradient(180deg, rgba(17,18,17,.85), rgba(17,18,17,.55) 60%, rgba(17,18,17,0));
+  border-bottom:1px solid rgba(194,164,118,.15);
+}
+.nav{display:flex; align-items:center; justify-content:space-between; padding:14px 0}
+.brand{display:flex; align-items:center; gap:.75rem}
+.brand-mark{width:36px; height:36px; border-radius:10px;
+  background: radial-gradient(80% 80% at 30% 20%, rgba(194,164,118,.65), transparent 60%),
+              linear-gradient(135deg, #1b211e, #101412);
+  border:1px solid rgba(194,164,118,.35);
+  box-shadow:0 6px 20px rgba(0,0,0,.35);
+}
+.brand-name{font-family:"Playfair Display", serif; font-weight:700; letter-spacing:.4px; font-size:1.25rem}
+nav ul{display:flex; gap:18px; list-style:none; margin:0; padding:0}
+nav a{opacity:.86} nav a:hover{opacity:1}
+.btn{display:inline-flex; align-items:center; gap:.5rem; padding:.8rem 1.1rem; border-radius:999px; border:1px solid var(--accent);
+     color:#0f1111; background:var(--accent); font-weight:600; letter-spacing:.3px; transition:.25s}
+.btn:hover{filter:brightness(1.08); transform:translateY(-1px)}
+.btn.outline{background:transparent; color:var(--ink); border-color:var(--ink)}
+.hero{padding:84px 0 48px; position:relative; overflow:hidden}
+.kicker{color:#9f978c; letter-spacing:.14em; text-transform:uppercase; font-size:.78rem}
+h1, h2.section-title{font-family:"Playfair Display", serif}
+h1{font-size:clamp(2.2rem,4vw,3.4rem); line-height:1.15; margin:.3rem 0 1rem}
+.lead{color:var(--muted); font-size:1.05rem; max-width:62ch}
+.section{padding:64px 0}
+.grid{display:grid; gap:20px}
+.products{grid-template-columns:repeat(12,1fr)}
+.products .card{grid-column:span 12}
+@media(min-width:720px){.products .card{grid-column:span 4}}
+.card{background:var(--chip); border:1px solid #2f302f; border-radius:18px; overflow:hidden}
+.card-body{padding:16px}
+.price{color:var(--accent); font-weight:600}
+.pill{font-size:.75rem; color:#cbbfa6; border:1px solid rgba(194,164,118,.35); padding:.2rem .6rem; border-radius:999px}
+.footer{border-top:1px solid rgba(194,164,118,.15); padding:28px 0 72px; color:#d8d3c7}
+.gallery{display:grid; gap:18px; grid-template-columns:repeat(12,1fr)}
+.gallery .item{grid-column:span 12}
+@media(min-width:720px){.gallery .item{grid-column:span 4}}
+.item h3{margin:.5rem 0 .25rem}
+.badge{display:inline-block; padding:6px 10px; border:1px solid #3a3a3a; color:var(--muted); border-radius:999px; font-size:12px; letter-spacing:.08em}
+.controls{display:flex; gap:12px; flex-wrap:wrap; margin-top:16px}
+.search{flex:1; min-width:200px; background:#0e1211; color:var(--ink); border:1px solid rgba(194,164,118,.28); border-radius:12px; padding:.8rem 1rem; outline:none}
+.search:focus{border-color:var(--accent); box-shadow:0 0 0 4px var(--ring)}
+.breadcrumbs{color:#b9b2a7; font-size:.9rem; margin:10px 0 0}

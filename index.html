@@ -3,141 +3,110 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Brandon Berry — Fragrance</title>
-  <meta name="description" content="Brandon Berry — signature colognes crafted with warm natural notes." />
+  <title>brizz.kixx — Sneakers & Apparel</title>
+  <meta name="description" content="brizz.kixx — modern sneakers & apparel. Natural tones, clean design." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --bg:#0f1111;           /* deep charcoal */
-      --ink:#eae6e1;         /* warm ivory */
-      --muted:#c7c1b8;       /* soft stone */
-      --accent:#c2a476;      /* amber/gold */
-      --chip:#2a2d2a;        /* card bg */
-    }
-    *{box-sizing:border-box}
-    html,body{height:100%}
-    body{
-      margin:0; background: radial-gradient(1200px 600px at 20% -10%, #1a1c1b 0%, var(--bg) 60%) no-repeat,
-                 linear-gradient(180deg, #121312 0%, var(--bg) 100%);
-      color:var(--ink); font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, sans-serif;
-      line-height:1.6;
-    }
-    header{
-      max-width:1100px; margin:24px auto; padding:0 20px;
-      display:flex; align-items:center; justify-content:space-between;
-    }
-    .logo{
-      font-family:"Playfair Display", serif; letter-spacing:.06em; font-weight:700; font-size:26px;
-    }
-    nav a{
-      color:var(--muted); text-decoration:none; margin-left:22px; font-weight:500; transition:color .2s;
-    }
-    nav a:hover{ color:var(--ink); }
-    .hero{
-      max-width:1100px; margin:60px auto 30px; padding:0 20px;
-      display:grid; grid-template-columns: 1.1fr .9fr; gap:40px; align-items:center;
-    }
-    .badge{ display:inline-block; padding:6px 10px; border:1px solid #3a3a3a; color:var(--muted); border-radius:999px; font-size:12px; letter-spacing:.08em; }
-    h1{ font-family:"Playfair Display", serif; font-size:52px; line-height:1.1; margin:.5rem 0 1rem; }
-    .lead{ color:var(--muted); max-width:560px }
-    .cta-row{ margin-top:22px; display:flex; gap:12px; flex-wrap:wrap }
-    .btn{
-      padding:12px 18px; border-radius:14px; border:1px solid #393a39; background:#1b1c1a; color:var(--ink); text-decoration:none; font-weight:600;
-    }
-    .btn--accent{ background:linear-gradient(180deg, #d8b882, var(--accent)); border-color:#9f8357; color:#161615 }
-    .card{
-      background:var(--chip); border:1px solid #2f302f; border-radius:18px; padding:18px; color:var(--muted);
-    }
-    .grid{ max-width:1100px; margin:30px auto; padding:0 20px; display:grid; grid-template-columns:repeat(3,1fr); gap:16px }
-    .grid h3{ color:var(--ink); margin:.4rem 0 .2rem; font-weight:600 }
-    .grid p{ margin:0; font-size:14px }
-    .footer{ max-width:1100px; margin:50px auto 40px; padding:0 20px; color:#9b968d; font-size:14px; display:flex; justify-content:space-between; align-items:center }
-    .chip{ display:inline-block; padding:6px 10px; border-radius:999px; background:#1a1b19; border:1px solid #31312f; color:var(--muted); font-size:12px }
-    @media (max-width:900px){
-      .hero{ grid-template-columns:1fr; gap:22px; text-align:center }
-      .lead{ margin:0 auto }
-      .grid{ grid-template-columns:1fr }
-    }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <header>
-    <div class="logo">Brandon&nbsp;Berry</div>
-    <nav>
-      <a href="#notes">Notes</a>
-      <a href="#collection">Collection</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="container nav">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true"></div>
+        <div>
+          <div class="brand-name">brizz.kixx</div>
+          <div class="kicker">Sneakers & Apparel</div>
+        </div>
+      </div>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shoes.html">Shoes</a></li>
+          <li><a href="apparel.html">Apparel</a></li>
+        </ul>
+      </nav>
+      <div>
+        <a class="btn outline" href="shoes.html">Shop Shoes</a>
+      </div>
+    </div>
   </header>
 
-  <section class="hero" id="top">
-    <div>
-      <span class="badge">New • Autumn ‘25</span>
-      <h1>Signature Colognes with Warm, Natural Notes</h1>
-      <p class="lead">Crafted in small batches with cedar, bergamot, and amber—the clean, everyday scent that feels like a tailored tee and a fresh fade. Minimal packaging. Maximum presence.</p>
-      <div class="cta-row">
-        <a class="btn btn--accent" href="#collection">Explore Collection</a>
-        <a class="btn" href="#notes">Scent Notes</a>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <span class="kicker">Brand Mission</span>
+        <h1>Clean design. Everyday comfort. Built to move.</h1>
+        <p class="lead">
+          At <strong>brizz.kixx</strong>, our goal is simple: quality sneakers and apparel that fit your life—no hype tax, no clutter.
+          We keep it minimal, durable, and wearable—so you can focus on the day, not your outfit.
+        </p>
+        <div class="controls">
+          <a class="btn" href="shoes.html">Explore Shoes</a>
+          <a class="btn outline" href="apparel.html">Browse Apparel</a>
+        </div>
       </div>
-    </div>
-    <div class="card">
-      <div style="aspect-ratio:4/5; width:100%; border-radius:12px; background:
-           radial-gradient(240px 180px at 70% 20%, #2a2b29 0%, #1b1c1a 60%),
-           url('https://images.unsplash.com/photo-1600959907703-125ba1374a12?q=80&w=1200&auto=format&fit=crop') center/cover no-repeat;
-           border:1px solid #323331;"></div>
-      <p style="margin:.8rem 0 0; font-size:13px">Photo for mockup only • Unsplash</p>
-    </div>
-  </section>
+    </section>
 
-  <section class="grid" id="notes">
-    <div class="card">
-      <h3>Top</h3>
-      <p>Bergamot · Grapefruit Zest · Green Fig</p>
-    </div>
-    <div class="card">
-      <h3>Heart</h3>
-      <p>Cedar Leaf · Violet · Sage</p>
-    </div>
-    <div class="card">
-      <h3>Base</h3>
-      <p>Amber · Vetiver · Clean Musk</p>
-    </div>
-  </section>
+    <section class="section container">
+      <span class="kicker">Featured</span>
+      <h2 class="section-title">A few of our staples</h2>
+      <div class="grid products">
+        <article class="card">
+          <img src="assets/shoes/shoe-01.svg" alt="Upload your image to assets/shoes/shoe-01.jpg" />
+          <div class="card-body">
+            <div style="display:flex; align-items:center; justify-content:space-between">
+              <h3 style="margin:.2rem 0 .4rem">Daily Runner</h3>
+              <span class="pill">Men / Women</span>
+            </div>
+            <p class="muted">Lightweight cushioning, neutral tones.</p>
+            <div style="display:flex; gap:10px; align-items:center; margin-top:8px">
+              <span class="price">$89</span>
+              <a class="btn outline" href="shoes.html">See all shoes</a>
+            </div>
+          </div>
+        </article>
 
-  <section class="grid" id="collection">
-    <div class="card">
-      <h3>Daybreak 50ml</h3>
-      <p>Bright and effortless. Daily driver.</p>
-      <div style="margin-top:10px">
-        <a class="btn btn--accent" href="#">Buy — $58</a>
-        <span class="chip">Ships in 3–5 days</span>
-      </div>
-    </div>
-    <div class="card">
-      <h3>Ember 50ml</h3>
-      <p>Warm amber & woods for night.</p>
-      <div style="margin-top:10px">
-        <a class="btn btn--accent" href="#">Buy — $64</a>
-        <span class="chip">Low stock</span>
-      </div>
-    </div>
-    <div class="card">
-      <h3>Discovery Set</h3>
-      <p>Three 2ml vials to test-drive.</p>
-      <div style="margin-top:10px">
-        <a class="btn btn--accent" href="#">Buy — $18</a>
-        <span class="chip">Free shipping</span>
-      </div>
-    </div>
-  </section>
+        <article class="card">
+          <img src="assets/shoes/shoe-02.svg" alt="Upload your image to assets/shoes/shoe-02.jpg" />
+          <div class="card-body">
+            <div style="display:flex; align-items:center; justify-content:space-between">
+              <h3 style="margin:.2rem 0 .4rem">Street Low</h3>
+              <span class="pill">Unisex</span>
+            </div>
+            <p class="muted">Minimal leather upper, everyday classic.</p>
+            <div style="display:flex; gap:10px; align-items:center; margin-top:8px">
+              <span class="price">$98</span>
+              <a class="btn outline" href="shoes.html">See all shoes</a>
+            </div>
+          </div>
+        </article>
 
-  <footer class="footer" id="contact">
-    <div>© <span id="y"></span> Brandon Berry</div>
-    <div class="chip">hello@brandonberry.com</div>
+        <article class="card">
+          <img src="assets/apparel/apparel-01.svg" alt="Upload your image to assets/apparel/apparel-01.jpg" />
+          <div class="card-body">
+            <div style="display:flex; align-items:center; justify-content:space-between">
+              <h3 style="margin:.2rem 0 .4rem">Essential Tee</h3>
+              <span class="pill">Soft cotton</span>
+            </div>
+            <p class="muted">Clean fit, perfect weight, neutral color.</p>
+            <div style="display:flex; gap:10px; align-items:center; margin-top:8px">
+              <span class="price">$24</span>
+              <a class="btn outline" href="apparel.html">See apparel</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container" style="display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:12px">
+      <div>© <span id="y"></span> brizz.kixx</div>
+      <div class="kicker">Minimal. Wearable. Durable.</div>
+    </div>
   </footer>
-
   <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
 </body>
 </html>

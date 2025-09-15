@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="900">
+  <rect width="100%" height="100%" fill="#1a1b1a"/>
+  <rect x="8" y="8" width="884" height="884" rx="18" ry="18" fill="#222421" stroke="#343534"/>
+  <text x="50%" y="48%" dominant-baseline="middle" text-anchor="middle" fill="#c7c1b8" font-family="Inter, sans-serif" font-size="28">Upload: assets/shoes/shoe-05.jpg</text>
+  <text x="50%" y="56%" dominant-baseline="middle" text-anchor="middle" fill="#9b968d" font-family="Inter, sans-serif" font-size="16">Replace this file with a JPG/PNG of the same name</text>
+</svg>
